@@ -1,0 +1,6 @@
+# dsh-compaction-effort-inherit bundle patch：把 host 半区插进 profile 的插件 roster。
+# 用 `dsh plugin --profile <name> add <路径或 git 地址>` 安装后本层自动生效；
+# 不要再往 profile 的 cordis.patch.yml 手动 insert 同一 id（重复 id 会让加载器报错起不来）。
+- insert:
+    - id: compaction-effort-inherit
+      name: 'dsh-compaction-effort-inherit'
